@@ -42,3 +42,12 @@ $('#toggle').click(function() {
     }
     console.log($('body'));
 });
+
+var slidesToShow = $(window).width() > 400 ? 3 : 2;
+
+$('.autoplay').slick({
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 8000,
+});
